@@ -22,7 +22,7 @@
           @click.stop="drawer = !drawer" />
 
         <NuxtLink :to="localePath('/')">
-          <v-img max-height="50" max-width="200" :src="require('static/images/logo/dark-logo.png')" ></v-img>
+          <v-img max-height="50" max-width="150" :src="require('static/images/logo/dark-logo.png')" ></v-img>
         </NuxtLink>
 
         <v-spacer />
