@@ -1,0 +1,18 @@
+/*--------------------------------------------------
+  [ Theme color   ]
+--------------------------------------------------*/
+/*========== theme Dark ==========*/
+.theme--dark.v-application {
+  background-color: $dark-body ;
+  color: $palette-text-white !important;
+  .v-navigation-drawer,
+  .v-toolbar.v-app-bar,
+  .v-card{
+    background-color: #2B2D5B !important;
+  }
+}
+
+/*========== theme light ==========*/
+.theme--light.v-application{
+
+}

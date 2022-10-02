@@ -1,0 +1,97 @@
+/*========== theme Text ==========*/
+.use-text {
+  &-title {
+    font-size: $h1-font-size;
+
+    @include breakpoints-down(md) {
+      font-size: $h2-font-size;
+      line-height: $spacing7;
+    }
+
+    @include breakpoints-down(xs) {
+      font-size: $h3-font-size;
+      line-height: $spacing5
+    }
+  }
+
+  &-title2 {
+    font-size: $h2-font-size;
+    @include breakpoints-down(md) {
+      font-size: $h3-font-size;
+      line-height: $spacing7;
+    }
+
+    @include breakpoints-down(xs) {
+      font-size: $h4-font-size;
+      line-height: $spacing5
+    }
+  }
+
+  &-title3 {
+    font-size: $h3-font-size;
+    font-weight: $font-SemiBold;
+
+    @include breakpoints-down(md) {
+      font-size: $h4-font-size;
+      line-height: $spacing7;
+    }
+
+    @include breakpoints-down(xs) {
+      font-size: $h5-font-size;
+      line-height: $spacing5
+    }
+  }
+
+  &-title4 {
+    font-size: $h4-font-size;
+    font-weight: $font-bold;
+
+    @include breakpoints-down(md) {
+      font-size: $h4-font-size;
+      line-height: $spacing7;
+    }
+
+    @include breakpoints-down(xs) {
+      font-size: $h5-font-size;
+      line-height: $spacing5
+    }
+  }
+
+  &-title5 {
+    font-size: $h5-font-size;
+    font-weight: $font-bold;
+
+    @include breakpoints-down(md) {
+      font-size: $h5-font-size;
+      line-height: $spacing7;
+    }
+
+    @include breakpoints-down(xs) {
+      font-size: $h6-font-size;
+      line-height: 45px;
+    }
+  }
+
+  &-subtitle {
+    font-size: $h6-font-size;
+    font-weight: $font-medium;
+
+    /*    color: #64688c;*/
+    @include breakpoints-down(md) {
+      font-size: $paragraph;
+      line-height: 36px;
+    }
+
+    @include breakpoints-down(xs) {
+      font-size: $paragraph;
+      line-height: 28px;
+    }
+  }
+
+  &-paragraph {
+    font-weight: $font-regular;
+    font-size: $paragraph;
+    line-height: 25px !important;
+    white-space: break-spaces !important;
+  }
+}

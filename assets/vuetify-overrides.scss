@@ -1,0 +1,182 @@
+/*
+Template Name: Microfilm
+Description: Microfilm | Vue Template
+Version: 1.0
+Author: Ahmed Samir
+        linkedin    URI: https://www.linkedin.com/in/a7med-samir-f/
+        Github      URI: https://github.com/a7medsamirf
+        Facebook    URI: https://www.facebook.com/a7med.samir.93/
+        Twitter     URI: https://twitter.com/a7medsamirf
+Tags: vue, Nuxt, Vuetify, Content, APi, one page, responsive, Axios
+Main Css Rules  for Main Elements in The project
+/*
+Style Index
+==================================================
+    1. Basic Setup
+    2. Theme color
+    2. Theme color
+    4. Font Styles
+      - widget
+    3. page content
+    4. login page
+    5. WHAT'S ON Section
+    6. About Section
+*/
+/*--------------------------------------------------
+  [1. Start Basic Setup ]
+--------------------------------------------------*/
+:root {
+  --p-darkcolor: #a9a9a9;
+  --white-color: #fff;
+  --dark-body: #0B0D39;
+  --dark-card: #2B2D5B;
+}
+body{
+  height: 1500px;
+}
+.v-main{
+
+}
+/* body{
+  overflow-x: hidden;
+} */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: $dark-surface;
+}
+
+::-moz-selection,
+-webkit-::-moz-selection {
+  background-color: $dark-surface;
+  color: $palette-text-white !important;
+}
+
+::selection,
+-webkit-::selection,
+::-moz-selection {
+  background-color: $dark-surface;
+  color: $palette-text-white !important;
+}
+
+
+p {
+  /*color: #6F6F87;*/
+  font-size: 1rem;
+  line-height: 25px;
+  font-weight: $font-regular;
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.v-chip--label {
+  border-radius: 0 !important;
+}
+
+.py-20 {
+  padding-top: 6.25rem !important;
+  padding-bottom: 6.25rem !important;
+}
+
+.pt-20 {
+  padding-top: 6.25rem !important;
+  ;
+
+  @include breakpoints-down(md) {
+    padding-top: 5rem !important;
+    ;
+  }
+
+  @include breakpoints-down(xs) {
+    padding-top: 4rem !important;
+    ;
+  }
+}
+
+.pa-20 {
+  padding: 4rem !important;
+  ;
+
+  @include breakpoints-down(md) {
+    padding: 3rem !important;
+    ;
+  }
+
+  @include breakpoints-down(xs) {
+    padding: 2rem !important;
+    ;
+  }
+}
+
+
+/*--------------------------------------------------
+  [3. Theme color   ]
+--------------------------------------------------*/
+.v-application {
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+
+  .main-wrap .title {
+    font-family: $body-font-family !important;
+  }
+
+  .slick-dots {
+    padding-left: 0;
+
+    li {
+      margin: 1px;
+
+      button:before {
+        border-radius: 50%;
+        color: transparent !important;
+        width: 10px;
+        height: 10px;
+        border: 2px solid $palette-primary-main;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+
+      &.slick-active {
+        button:before {
+          width: 23px;
+          height: 10px;
+          top: 0;
+          left: -5px;
+          border-radius: 5px;
+          background: $palette-primary-main;
+        }
+      }
+    }
+  }
+}
+
+.v-toolbar.v-app-bar.v-app-bar--fixed {
+  border-radius: 35px !important;
+  margin: 25px !important;
+  background: #ffffff !important;
+  box-shadow: 0px 0px 25px 0px rgb(45 69 95 / 10%) !important;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.v-toolbar.v-app-bar.v-app-bar--fixed.v-app-bar--is-scrolled {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  transition: all 0.5s ease-in-out;
+}

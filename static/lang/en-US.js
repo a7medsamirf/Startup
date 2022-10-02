@@ -1,0 +1,96 @@
+export default () => {
+  return new Promise(function (resolve) {
+    resolve({
+      common: {
+        "ReadMore": "Read More",
+        "search": "Search",
+        "lorem": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "loremV2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "newsletter": "النشرة البريدية",
+        "newsletter-placeholder": "What is your email ?",
+        "newsletter-button": "Subscribe",
+        "subscribe-title": "Subscribe our newsletter",
+        "subscribe-desc": "Subscribe to our newsletter to receive our latest news and special offers",
+        "Testimonials": "Testimonials",
+        "Testimonials-desc": "What our customers say about us",
+        "pricing_free": "start for free",
+        "pricing_buy": "buy now",
+        "btn_contact": "contact us",
+        "btn_Property": "Check Property",
+      },
+      HeroSection: {
+        "Platform": "Real Estate Searching Platform",
+        "title": "Find The House",
+        "titlebr": "of Your Dream Using Our Platform",
+        "looking": "What are you looking for ?",
+        "states": "Statuses",
+        "Cities": "Cities",
+      },
+      WhatWeDo: {
+        "title" : "what we do",
+        "desc" : "Our Main Speciality",
+        "Buy" : "Buy a New Home",
+        "Sell" : "Sell a Home",
+        "Rent" : "Rent a Home",
+
+      },
+      nav: {
+        "pages": "Pages",
+        "Home": "Home",
+        "about-Us": "about Us ",
+        "news": "News",
+        "pricing": "Pricing",
+        "dashboard": "User Dashboard",
+        "contacts": "contacts Us",
+        "faq": "Faq",
+      },
+      contacts: {
+        "Mails": "Our Emails",
+        "Phones": "Our Phones",
+        "Address": "Our Address",
+        "Working-Hours": "Working Hours",
+        "location": "Cairo , Egypt",
+        "Get-In-Touch": "Keep In Touch",
+        "Send-Us-Message": "Do you have any questions? Send us a message.",
+        "Your-Name":"Your Name *",
+        "mail": "E-Mail",
+        "Subject" : "Subject",
+        "Write-message" : "Write your message here...",
+        "Send-Message" : " Send Message",
+      },
+      about: {
+        "Support": "24 Hours Support",
+        "Panel": "User Admin Panel",
+        "Friendly": "Mobile Friendly",
+      },
+      Team: {
+        "title": "Our Team",
+        "desc": "Our Awesome Team",
+      },
+      Pricing: {
+        "Pricing-and-plan": "Pricing and plan",
+        "desc": "The best value designed for your workplace, starting at just $15/user/month.",
+        "Free": "free",
+        "enterprises": "enterprises",
+        "personal": "personal",
+        "professional": "professional",
+        "Monthly": "Monthly",
+        "Included": "15 Users Included",
+      },
+      help: {
+        "FaqNavigation": "FAQ Navigation",
+        "Payments": "Payments",
+        "Suggestions": "Suggestions",
+        "Recommendations": "Recommendations",
+        "Booking": "Booking",
+        "Listing": "Listing",
+        question: {
+          "question1": "Can I pay my own taxes and insurance ?",
+          "question2": "How long does the loan process take ?",
+          "question3": "How long does the sending process take ?",
+        },
+      },
+    })
+  })
+}
+
