@@ -1,7 +1,7 @@
 <template>
     <v-app :dir="$dir()">
     <TheHeader />
-      <v-main class="pt-0">
+      <v-main>
         <v-container>
           <Nuxt />
         </v-container>
