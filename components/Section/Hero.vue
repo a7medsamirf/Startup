@@ -18,6 +18,7 @@
             <v-col cols="12" md="6" class="px-sm-5 px-0">
               <div class="img-box hidden-sm-and-down">
                 <v-img
+                  max-width="85%"
                   class="rocket-bg"
                   alt="rocket Bg"
                   :src="require('static/images/hero/white-bg.png')"
@@ -67,6 +68,7 @@ export default {
       .rocket-img {
         position: relative;
         z-index: 1;
+        animation: myAnim 3s ease-out 0s infinite alternate forwards;
       }
       .rocket-bg {
         position: absolute;
@@ -76,6 +78,16 @@ export default {
   }
 
 }
+@keyframes myAnim {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
 
 
 
