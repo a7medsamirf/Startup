@@ -14,6 +14,7 @@
       <sidebar />
     </v-navigation-drawer>
     <!---------- End Navigation Drawer ---------->
+
     <!---------- Start App Bar ---------->
     <v-app-bar app height="85px" fixed  elevation="0">
       <v-container class="pa-0 fill-height">
@@ -21,8 +22,9 @@
           class="hidden-md-and-up"
           @click.stop="drawer = !drawer" />
 
-        <NuxtLink :to="localePath('/')">
-          <v-img max-height="50" max-width="150" :src="require('static/images/logo/dark-logo.png')" ></v-img>
+        <NuxtLink :to="localePath('/')" >
+          <v-img v-if="!$vuetify.theme.dark" max-height="50" max-width="160" :src="require('static/images/logo/dark-logo.png')" ></v-img>
+          <v-img v-else max-height="50" max-width="160" :src="require('static/images/logo/white.png')" ></v-img>
         </NuxtLink>
 
         <v-spacer />
@@ -33,10 +35,11 @@
                  v-if="!item.subitems"
                  exact
                  :to="localePath(item.to)" router>
-            {{$t(item.title)}}
+                 {{$t(item.title)}}
           </v-btn>
 
           <v-menu
+            class="elevation-0"
             open-on-hover :close-on-content-click="false"
             transition="slide-y-transition"
             content-class="nav-menu"
@@ -93,14 +96,16 @@ export default {
       Lang : '',
       items: [
         {title: 'nav.Home', to: '/'},
+        {title: 'nav.solutions', to: '/Solutions'},
+        {title: 'nav.Services', to: '/Services'},
         {title: 'nav.about-Us', to: '/about-Us'},
-        {title: 'nav.news', to: '/blog'},
         { title: 'nav.pages',
           subitems: [
             {title: 'nav.faq', to: '/help'},
             {title: 'nav.pricing', to: '/pricing'},
           ]
         },
+
         {title: 'nav.contacts', to: '/contacts'},
 
       ],

@@ -4,15 +4,24 @@
 /*========== theme Dark ==========*/
 .theme--dark.v-application {
   background-color: $dark-body ;
-  color: $palette-text-white !important;
+  color: $palette-text-white;
   .v-navigation-drawer,
   .v-toolbar.v-app-bar,
-  .v-card{
-    background-color: #2B2D5B !important;
+  .v-card,
+  .v-list{
+    background-color: $dark-surface;
   }
+
 }
 
 /*========== theme light ==========*/
 .theme--light.v-application{
 
+}
+
+
+.v-menu__content{
+  border-radius: 1rem;
+  background: #ffffff !important;
+  box-shadow: 0px 0px 25px 0px rgb(45 69 95 / 10%) !important;
 }

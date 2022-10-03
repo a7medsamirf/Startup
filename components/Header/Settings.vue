@@ -8,8 +8,6 @@
     >
       {{ locale.name }}
     </v-btn>
-
-
   </div>
 </template>
 

@@ -20,11 +20,12 @@ export default {
     ]
   },
 
+  transition: 'slide-bottom',
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
 /*    '~/assets/transition.scss',*/
     '~/assets/vuetify-overrides.scss',
-
 
   ],
 

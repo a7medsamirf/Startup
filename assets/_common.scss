@@ -1,3 +1,27 @@
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: $dark-surface;
+}
+
+::-moz-selection,
+-webkit-::-moz-selection {
+  background-color: $dark-surface;
+  color: $palette-text-white !important;
+}
+
+::selection,
+-webkit-::selection,
+::-moz-selection {
+  background-color: $dark-surface;
+  color: $palette-text-white !important;
+}
+
+
 /*========== theme Text ==========*/
 .use-text {
   &-title {

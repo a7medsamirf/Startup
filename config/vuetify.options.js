@@ -22,7 +22,7 @@ export default {
         info: '#2196F3',
         success: '#4CAF50',
         warning: '#FFC107',
-        default: '#ff8e28',
+        default: '#356DFF',
       },
       light: {
         background: '#d0f0c0',
@@ -36,7 +36,7 @@ export default {
         info: '#2196F3',
         success: '#4CAF50',
         warning: '#FFC107',
-        default: '#ff8e28',
+        default: '#356DFF',
       },
 
     },

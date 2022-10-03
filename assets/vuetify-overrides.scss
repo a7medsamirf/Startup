@@ -29,51 +29,30 @@ Style Index
   --p-darkcolor: #a9a9a9;
   --white-color: #fff;
   --dark-body: #0B0D39;
+  --dark-section: #000;
   --dark-card: #2B2D5B;
 }
-body{
-  height: 1500px;
+.v-application--is-ltr{
+  font-family: $en-body-font-family;
+  background-image: url(../static/images/body-bg.png);
+  background-size: cover;
 }
-.v-main{
+body{
+  text-transform: capitalize;
+  background-image: url(../static/images/body-bg.png);
+  background-size: cover;
+
 
 }
-/* body{
-  overflow-x: hidden;
-} */
 html {
   scroll-behavior: smooth;
 }
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px
-}
-
-::-webkit-scrollbar-thumb {
-  cursor: pointer;
-  background: $dark-surface;
-}
-
-::-moz-selection,
--webkit-::-moz-selection {
-  background-color: $dark-surface;
-  color: $palette-text-white !important;
-}
-
-::selection,
--webkit-::selection,
-::-moz-selection {
-  background-color: $dark-surface;
-  color: $palette-text-white !important;
-}
-
 
 p {
   /*color: #6F6F87;*/
   font-size: 1rem;
   line-height: 25px;
   font-weight: $font-regular;
-
 }
 
 li {
@@ -128,43 +107,6 @@ a {
 /*--------------------------------------------------
   [3. Theme color   ]
 --------------------------------------------------*/
-.v-application {
-  scroll-behavior: smooth;
-  text-transform: capitalize;
-
-  .main-wrap .title {
-    font-family: $body-font-family !important;
-  }
-
-  .slick-dots {
-    padding-left: 0;
-
-    li {
-      margin: 1px;
-
-      button:before {
-        border-radius: 50%;
-        color: transparent !important;
-        width: 10px;
-        height: 10px;
-        border: 2px solid $palette-primary-main;
-        opacity: 0.5;
-        transition: all 0.3s ease;
-      }
-
-      &.slick-active {
-        button:before {
-          width: 23px;
-          height: 10px;
-          top: 0;
-          left: -5px;
-          border-radius: 5px;
-          background: $palette-primary-main;
-        }
-      }
-    }
-  }
-}
 
 .v-toolbar.v-app-bar.v-app-bar--fixed {
   border-radius: 35px !important;
@@ -173,7 +115,6 @@ a {
   box-shadow: 0px 0px 25px 0px rgb(45 69 95 / 10%) !important;
   transition: all 0.5s ease-in-out;
 }
-
 
 .v-toolbar.v-app-bar.v-app-bar--fixed.v-app-bar--is-scrolled {
   margin: 0 !important;

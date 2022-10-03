@@ -22,7 +22,6 @@ $h4-font-size: 1.5rem !important;
 $h5-font-size: 1.25rem !important;
 $h6-font-size: 1rem ;
 $paragraph : 0.875rem !important;
-// font-size
 
 // Font weight
 $font-light: 300;
@@ -33,7 +32,10 @@ $font-bold: 700;
 $font-bolder: 800;
 
 //text-color
+$dark-text-color: #0B0D39;
+$white-text-color: #fff;
 $p-light-text: 300;
+
 
 //box shadow
 /*$box-shadow: 0 7px 18px 0 rgb(7 174 175 / 32%) !important;*/
@@ -46,15 +48,7 @@ $palette-link: var(--v-anchor-base);
 // card bg
 $card-bg:rgba(255, 255, 255, 0.05882);
 
-// Theme color palette LightSeaGreen
-$palette-primary-main: #e62d2d;
-$palette-primary-light: #e62d2d;
-$palette-primary-dark: #e62d2d;
 
-// Theme color palette secondary
-$palette-secondary-main: #FE9900;
-$palette-secondary-light: #FE9900;
-$palette-secondary-dark: #FE9900;
 
 // Common color palette
 $palette-common-white: #FFF !important;
@@ -64,27 +58,16 @@ $palette-common-primary: #e62d2d;
 $palette-common-secondary: #FE9900;
 
 
-// Light color palette
-$light-text-primary: rgba(0, 0, 0, 0.87);
-$light-text-secondary: rgba(0, 0, 0, 0.54);
-$light-text-disabled: rgba(0, 0, 0, 0.38);
-$light-text-hint: rgba(0, 0, 0, 0.38);
-$light-divider: rgba(0, 0, 0, 0.12);
 
-$light-v-application: -webkit-linear-gradient( -90deg, rgb(230,254,255) 0%, rgba(230,254,255,0.2) 100%) !important;
-$light-background-paper: #fff;
-$light-background-default: #fafafa;
 
 // Dark Color Palette
-$dark-surface: #08293f !important; // card and item
+$dark-surface: #2B2D5B !important; // card and item
 $dark-body: #0B0D39 !important;
 $dark-text-primary: #fff;
 $dark-text-secondary: rgba(255, 255, 255, 0.7);
 $dark-text-disabled: rgba(255, 255, 255, 0.5);
 $dark-text-hint: rgba(255, 255, 255, 0.5);
-
 $dark-divider: rgba(255, 255, 255, 0.12);
-
 $dark-background-paper: #0c243f;
 $dark-background-default: #1b344d;
 

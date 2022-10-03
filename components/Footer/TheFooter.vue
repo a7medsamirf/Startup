@@ -1,8 +1,5 @@
 <template>
-  <v-footer
-    :absolute="!fixed"
-    app
-  >
+  <v-footer>
     <span>&copy; {{ new Date().getFullYear() }}</span>
   </v-footer>
 </template>
@@ -12,9 +9,7 @@ export default {
   name: "TheFooter",
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
+
     }
   }
 }
