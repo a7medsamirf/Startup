@@ -11,12 +11,16 @@
   .v-list{
     background-color: $dark-surface;
   }
-
+  .section-bg{
+      background-color: $dark-section-bg;
+  }
 }
 
 /*========== theme light ==========*/
 .theme--light.v-application{
-
+  .section-bg{
+    background-color: $light-section-bg;
+  }
 }
 
 

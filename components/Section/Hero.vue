@@ -77,32 +77,7 @@ export default {
 
 }
 
-.btn.outline{
-  background-color: transparent;
-  outline: 1px solid #356DFF;
-  outline-offset: -1px;
-  color: #356DFF;
-}
-.btn {
-  background: #356DFF;
-  padding: 1em 1.5em;
-  color: #fff;
-  border-radius: 5px;
-  margin-block: 1em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  line-height: 1rem;
-  transition: 0.2s ease;
-  min-width: 115px;
-  height: 3em;
-  box-shadow: 3px 3px 0px #356DFF;
-}
-.btn:hover {
-  transform: scale(0.95);
-  box-shadow: 1px 1px 0px #356DFF;
-}
+
 
 
 
