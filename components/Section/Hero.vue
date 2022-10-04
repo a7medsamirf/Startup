@@ -1,5 +1,6 @@
 <template>
   <section class="hero">
+    <v-container>
     <div class="hero-wrap">
       <div class="inner d-flex align-center justify-center">
         <v-container>
@@ -21,12 +22,14 @@
                   max-width="85%"
                   class="rocket-bg"
                   alt="rocket Bg"
-                  :src="require('static/images/hero/white-bg.png')"
+                  :lazy-src="require('static/images/hero/white-bg.webp')"
+                  :src="require('static/images/hero/white-bg.webp')"
                 ></v-img>
                 <v-img
                   class="rocket-img"
                   alt="rocket"
-                  :src="require('static/images/hero/white-rocket.png')"
+                  :lazy-src="require('static/images/hero/white-rocket.webp')"
+                  :src="require('static/images/hero/white-rocket.webp')"
                 >
                 </v-img>
 
@@ -36,6 +39,7 @@
         </v-container>
       </div>
     </div>
+    </v-container>
   </section>
 
 </template>

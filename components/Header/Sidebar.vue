@@ -54,16 +54,10 @@ export default {
   data () {
     return {
       links: [
-        {title: 'Home', to: '/', icon: 'fi-rr-home'},
-        {title: 'about-Us', to: '/about-Us', icon: 'fi-rr-home'},
-        {title: 'news', to: '/blog', icon: 'fi-rr-home'},
-        { title: 'pages', icon: 'fi-rr-browser',
-          subLinks: [
-            {title: 'faq', to: '/help', icon: 'mdi-chart-bubble'},
-            {title: 'pricing', to: '/pricing', icon: 'mdi-chart-bubble'},
-          ]
-        },
-        {title: 'contacts', to: '/contacts', icon: 'fi-rr-phone-call'},
+        {title: 'nav.Home', to: '/', icon: 'fi-rr-home'},
+        {title: 'nav.solutions', to: '/solutions', icon: 'fi-rr-home'},
+        {title: 'nav.Services', to: '/Services', icon: 'fi-rr-home'},
+        {title: 'nav.about-Us', to: '/about-Us', icon: 'fi-rr-home'},
       ],
 
     }

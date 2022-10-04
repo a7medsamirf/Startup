@@ -99,14 +99,7 @@ export default {
         {title: 'nav.solutions', to: '/Solutions'},
         {title: 'nav.Services', to: '/Services'},
         {title: 'nav.about-Us', to: '/about-Us'},
-        { title: 'nav.pages',
-          subitems: [
-            {title: 'nav.faq', to: '/help'},
-            {title: 'nav.pricing', to: '/pricing'},
-          ]
-        },
 
-        {title: 'nav.contacts', to: '/contacts'},
 
       ],
 
@@ -115,3 +108,32 @@ export default {
 
 }
 </script>
+
+<style scoped lang="scss">
+.v-toolbar .v-btn:before {
+  background-color: transparent;
+  border-radius: 3px;
+  bottom: unset;
+  color: inherit;
+  content: "";
+  left: 0px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+header.v-toolbar a.v-btn--active {
+  color: #0B0D39 !important;
+}
+header.v-toolbar a.v-btn--active:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3063e9;
+  position: absolute;
+  bottom: 10px;
+}
+</style>
