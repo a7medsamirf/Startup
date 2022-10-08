@@ -40,6 +40,7 @@
 
   &-title2 {
     font-size: $h2-font-size;
+
     @include breakpoints-down(md) {
       font-size: $h3-font-size;
       line-height: $spacing7;
@@ -120,8 +121,9 @@
   }
 }
 
-.v-btn{
+.v-btn {
   text-transform: capitalize;
+  letter-spacing: normal !important;
 }
 
 .btn {
@@ -139,14 +141,29 @@
   min-width: 115px;
   height: 3em;
   box-shadow: 3px 3px 0px #356DFF;
-  &:hover{
+
+  &:hover {
     transform: scale(0.95);
     box-shadow: 1px 1px 0px #356DFF;
   }
 }
-.btn.outline{
+
+.btn.outline {
   background-color: transparent;
   outline: 1px solid #356DFF;
   outline-offset: -1px;
   color: #356DFF;
+}
+
+.btn.default {
+  box-shadow: 0 6px 20px 4px rgb(56 125 255 / 50%);
+}
+
+.title-btn {
+  background-color: #ff910052 !important;
+  color: #ff9100;
+}
+
+.text-color-default{
+  color: #0B0D39;
 }

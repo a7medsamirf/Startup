@@ -14,6 +14,11 @@
   .section-bg{
       background-color: $dark-section-bg;
   }
+  header.v-toolbar a.v-btn--active,
+  .text-color-default {
+    color: #fff !important;
+  }
+
 }
 
 /*========== theme light ==========*/

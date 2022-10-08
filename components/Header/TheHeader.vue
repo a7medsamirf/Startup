@@ -4,9 +4,11 @@
     <v-navigation-drawer class="hidden-md-and-up" v-model="drawer"  fixed :right="$vuetify.rtl">
       <v-list-item class="pa-3">
         <div class="logo">
-          <NuxtLink to="/">
-            <v-img max-height="50" max-width="160" :src="require('static/images/logo/dark-logo.png')" ></v-img>
-          </NuxtLink>
+          <NuxtLink :to="localePath('/')" >
+          <v-img v-if="!$vuetify.theme.dark" max-height="50" max-width="170" :src="require('static/images/logo/dark-logo.png')" ></v-img>
+          <v-img v-else max-height="50" max-width="170" :src="require('static/images/logo/white.png')" ></v-img>
+        </NuxtLink>
+  
         </div>
         <v-spacer></v-spacer>
         <v-btn class="close-icon" icon @click="drawer = !drawer"> <v-icon>mdi-close</v-icon></v-btn>
