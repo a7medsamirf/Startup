@@ -7,7 +7,7 @@
           <v-row>
             <v-col cols="12" lg="4" md="6" sm="12">
               <button class="title-btn rounded-xl elevation-0">contact us</button>
-              <v-list-item-title class="use-text-title2"> Hello@Startup.com </v-list-item-title>
+              <v-list-item-title class="use-text-title2 mt-3"> Hello@Startup.com </v-list-item-title>
             </v-col>
             <v-col cols="12" lg="2" md="6" sm="12">
               <div class="widget-tittle ma-2"><h2>Quick Links</h2> <span></span></div>
