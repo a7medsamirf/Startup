@@ -11,7 +11,7 @@ export default () => {
         "solutions": "Solutions",
         "about-Us": "about Us ",
         "Services": "Services",
-        "pricing": "Pricing",
+        "Feedback": "Feedback",
         "dashboard": "User Dashboard",
         "contacts": "contacts Us",
         "faq": "Faq",

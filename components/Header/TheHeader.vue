@@ -13,7 +13,10 @@
         <v-spacer></v-spacer>
         <v-btn class="close-icon" icon @click="drawer = !drawer"> <v-icon>mdi-close</v-icon></v-btn>
       </v-list-item>
+
+      <!----- Sidebar Components ----->
       <sidebar />
+
     </v-navigation-drawer>
     <!---------- End Navigation Drawer ---------->
 
@@ -25,8 +28,8 @@
           @click.stop="drawer = !drawer" />
 
         <NuxtLink :to="localePath('/')" >
-          <v-img v-if="!$vuetify.theme.dark" max-height="50" max-width="160" :src="require('static/images/logo/dark-logo.png')" ></v-img>
-          <v-img v-else max-height="50" max-width="160" :src="require('static/images/logo/white.png')" ></v-img>
+          <v-img v-if="!$vuetify.theme.dark" max-height="50" max-width="170" :src="require('static/images/logo/dark-logo.png')" ></v-img>
+          <v-img v-else max-height="50" max-width="170" :src="require('static/images/logo/white.png')" ></v-img>
         </NuxtLink>
 
         <v-spacer />
@@ -70,8 +73,13 @@
               </v-list-item>
             </v-list>
           </v-menu>
+        
         </v-toolbar-items>
-
+        <div class="hidden-md-and-down">
+          <button  href="#" title="تواصل معنا" class="btn default ma-5 pa-5"> {{ $t('common.discuss') }}</button>
+         <button href="#" title="تواصل معنا" class="btn outline">{{ $t('common.Learn-more') }}</button>
+        </div>
+   
     <Settings />
         <ThemeSwitcher/>
 
@@ -98,11 +106,10 @@ export default {
       Lang : '',
       items: [
         {title: 'nav.Home', to: '/'},
-        {title: 'nav.solutions', to: '/Solutions'},
-        {title: 'nav.Services', to: '/Services'},
-        {title: 'nav.about-Us', to: '/about-Us'},
-
-
+        {title: 'nav.solutions', to: ''},
+        {title: 'nav.Services', to: ''},
+        {title: 'nav.about-Us', to: ''},
+        {title: 'nav.Feedback', to: ''},
       ],
 
     }

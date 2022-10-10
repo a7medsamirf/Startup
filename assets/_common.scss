@@ -156,12 +156,17 @@
 }
 
 .btn.default {
-  box-shadow: 0 6px 20px 4px rgb(56 125 255 / 50%);
+  box-shadow: $box-shadow
 }
 
 .title-btn {
-  background-color: #ff910052 !important;
+  background-color: rgb(255 145 0 / 20%) !important;
   color: #ff9100;
+  height: 36px;
+  min-width: 77px;
+  padding: 0 26px;
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .text-color-default{

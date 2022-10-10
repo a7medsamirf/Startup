@@ -9,11 +9,8 @@
               <div class="text">
                 <h1 class="ma-5 text-color-default hero-title ">{{ $t('HeroSection.title') }}</h1>
                 <p class="use-text-subtitle ma-5 hero-subtitle">{{ $t('HeroSection.subtitle') }}</p>
-
                 <button  href="#" title="تواصل معنا" class="btn default ma-5 pa-5"> {{ $t('common.discuss') }}</button>
                 <button href="#" title="تواصل معنا" class="btn outline">{{ $t('common.Learn-more') }}</button>
-
-
               </div>
             </v-col>
             <v-col cols="12" md="6" class="px-0 mt-16">

@@ -4,7 +4,7 @@
 
       <v-row  class="justify-center">
           <div class="text-center">
-            <v-btn class="title-btn rounded-xl elevation-0">features</v-btn>
+            <button class="title-btn rounded-xl elevation-0">features</button>
             <h2 class="text-color-default use-text-title2 ma-3 ">Your Dream Template</h2>
           </div>
 

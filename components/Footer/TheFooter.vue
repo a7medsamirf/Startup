@@ -6,18 +6,8 @@
         <v-container>
           <v-row>
             <v-col cols="12" lg="4" md="6" sm="12">
-              <v-img
-
-                class="ma-3"
-                max-height="50"
-                max-width="200"
-                :src="require('static/images/logo/white.png')" >
-              </v-img>
-              <v-list-item >
-                <v-list-item-content>
-                  <v-list-item-subtitle class="use-text-paragraph">{{ $t('features.description') }}</v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
+              <button class="title-btn rounded-xl elevation-0">contact us</button>
+              <v-list-item-title class="use-text-title2"> Hello@Startup.com </v-list-item-title>
             </v-col>
             <v-col cols="12" lg="2" md="6" sm="12">
               <div class="widget-tittle ma-2"><h2>Quick Links</h2> <span></span></div>

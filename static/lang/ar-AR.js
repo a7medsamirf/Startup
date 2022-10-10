@@ -11,7 +11,7 @@ export default () => {
         "solutions": "الحلول",
         "about-Us": "من نحن",
         "Services": "الخدمات",
-        "pricing": "الأسعار",
+        "Feedback": "أنطباع",
         "dashboard": "لوحة تحكم المستخدم ",
         "contacts": "أتصل بنا",
         "faq": " الأسئلة الشائعة",

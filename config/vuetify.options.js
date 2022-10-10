@@ -1,5 +1,3 @@
-
-
 let darkMode = false
 if (typeof Storage !== 'undefined') { // eslint-disable-line
   darkMode = localStorage.getItem('MedFoodDarkMode') || false
