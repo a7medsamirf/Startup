@@ -71,15 +71,34 @@
 <style scoped lang="scss">
   .features {
     .v-card {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        z-index: 1;
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          transform: translateY(-10px);
+          &::before{
+            transform: translate3d(0px, 0, 0px);
+    bottom: 0;
+          }
+        }
       img {
         width: 80%;
       }
       &:before {
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        left: 0;
+        right: 0;
         content: "";
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: #000;
+        background-color: #356DFF;
+        transition: all 500ms ease;
+        transform: translate3d(0px, 100%, 0px);
+        z-index: -1;
       }
     }
   }

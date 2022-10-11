@@ -26,12 +26,14 @@ Style Index
   [1. Start Basic Setup ]
 --------------------------------------------------*/
 :root {
+  --maincolor: #356DFF;
   --p-darkcolor: #a9a9a9;
   --white-color: #fff;
   --dark-body: #0B0D39;
   --dark-section: #000;
   --dark-card: #2B2D5B;
 }
+
 .v-application--is-ltr{
   font-family: $en-body-font-family;
   background-image: url(../static/images/body-bg.png);
