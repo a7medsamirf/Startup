@@ -4,6 +4,8 @@ export default () => {
       common: {
         "discuss": "Let's discuss",
         "Learn-more": "Learn More",
+        "comment": "There’s no other program that walks you through exactly what you need to know to start an online store fast, written by someone who has built several 7-figure ecommerce businesses from scratch. ",
+
       },
       nav: {
         "pages": "Pages",
