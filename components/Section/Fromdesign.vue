@@ -17,8 +17,8 @@
                 <v-img
                   class="rocket-img"
                   alt="rocket"
-                  :lazy-src="require('static/images/hero/white-rocket.webp')"
-                  :src="require('static/images/hero/white-rocket.webp')"
+                  :lazy-src="require('static/images/widget-11.png')"
+                  :src="require('static/images/widget-11.png')"
                 >
                 </v-img>
               </div>
