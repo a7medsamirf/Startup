@@ -1,12 +1,13 @@
 <template>
-      <section class="Testimonials section-bg pa-16">
+      <section class="Testimonials section-bg py-16">
         <v-container>
-            <v-row  class="justify-center">
-          <div class="text-center">
+            <v-row>
+          <div>
             <button class="title-btn rounded-xl elevation-0">Testimonials</button>
-            <h2 class="text-color-default use-text-title2 ma-3 ">Trusted by 100's of clients</h2>
+            <h2 class="text-color-default use-text-title2 my-3 ">Trusted by 100's of clients</h2>
           </div>
       </v-row>
+    </v-container>
       <div class="ReviewCard pt-16" id="ReviewCard">
   <slick ref="slick" :options="slickOptions">
         <div class="review text-center"
@@ -21,20 +22,34 @@
             outlined
           >
           <div class="person-block">
-            <v-avatar class="photo" width="80" height="80">
-              <img :src="review.avatar" :alt="review.title">
-            </v-avatar>
-            <v-list-item-title class="use-text-title5 text-color-default mb-1 mt-3">
-              {{ review.title }}
-            </v-list-item-title>
-          </div>
+     
+      
+    
 
             <v-list-item >
               <v-list-item-content>
-
+                <v-list-item-title class="use-text-title5 text-color-default mb-1 mt-3">
+              {{ review.title }}
+            </v-list-item-title>
                 <v-list-item-subtitle class="use-text-paragraph" v-text="$t(review.comment)"/>
               </v-list-item-content>
             </v-list-item>
+
+
+            <v-list-item three-line>
+              <v-avatar class="photo mr-3" width="70" height="70">
+              <img :src="review.avatar" :alt="review.title">
+            </v-avatar>
+
+      <v-list-item-content>
+
+        <v-list-item-title class="text-h5 mb-1">{{ review.title }}</v-list-item-title>
+        <v-list-item-subtitle>Greyhound divisely</v-list-item-subtitle>
+      </v-list-item-content>
+
+
+    </v-list-item>
+  </div>
           </v-card>
         </div>
 
@@ -45,7 +60,7 @@
 </div>
 
 
-        </v-container>
+  
     </section>
 </template>
 
@@ -120,7 +135,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .ReviewCard {
   .comment-block {
     position: relative;

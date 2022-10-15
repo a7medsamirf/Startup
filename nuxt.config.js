@@ -7,7 +7,7 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    titleTemplate: '%s - Startup',
+/*     titleTemplate: '%s - Startup', */
     title: 'Startup',
     meta: [
       { charset: 'utf-8' },
@@ -27,8 +27,7 @@ export default {
   css: [
 /*    '~/assets/transition.scss',*/
     '~/assets/vuetify-overrides.scss',
-    '~/assets/vendors/slick-carousel/slick-theme.css',
-    '~/assets/vendors/slick-carousel/slick.css',
+
     '~/assets/vendors/animate.css',
 
   ],

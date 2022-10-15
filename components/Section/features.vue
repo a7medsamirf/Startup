@@ -1,5 +1,5 @@
 <template>
-  <section class="features section-bg pa-16">
+  <section class="features section-bg py-16">
     <v-container>
 
       <v-row  class="justify-center">

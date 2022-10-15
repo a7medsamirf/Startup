@@ -143,6 +143,6 @@ header.v-toolbar a.v-btn--active:after {
   border-radius: 50%;
   background: #3063e9;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
 }
 </style>
