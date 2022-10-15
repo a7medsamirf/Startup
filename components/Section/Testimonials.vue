@@ -35,7 +35,7 @@
               </v-list-item-content>
             </v-list-item>
 
-
+            <i class="fa-solid fa-house"></i>
             <v-list-item three-line>
               <v-avatar class="photo mr-3" width="70" height="70">
               <img :src="review.avatar" :alt="review.title">
