@@ -1,24 +1,5 @@
 @charset 'UTF-8';
 
-/* Slider */
-.slick-loading {
-    .slick-list {
-        background: #fff url('/assets/vendors/slick-carousel/ajax-loader.gif') center center no-repeat;
-      }
-}
-
-/* Icons */
-@font-face {
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-    src: url('/assets/vendors/slick-carousel/fonts/slick.eot?#iefix')
-    format('embedded-opentype'),
-    url('/assets/vendors/slick-carousel/fonts/slick.woff') format('woff'),
-    url('/assets/vendors/slick-carousel/fonts/slick.ttf') format('truetype'),
-    url('/assets/vendors/slick-carousel/fonts/slick.svg#slick') format('svg');
-  }
-
 
 /* Arrows */
 .slick-prev {
@@ -86,7 +67,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: 'slick';
+  font-family: 'Font Awesome 6 Free';
   font-size: 20px;
   line-height: 1;
   opacity: .75;
@@ -102,11 +83,15 @@
 }
 
 .slick-prev:before {
-  content: '←';
+  font-family: 'Font Awesome 6 Free';
+  content: "\f355";
+  font-weight: 900;
 }
 
 [dir='rtl'] .slick-prev:before {
-  content: '→';
+  font-family: 'Font Awesome 6 Free';
+  content: "\f355";
+  font-weight: 900;
 }
 
 [dir='rtl'] .slick-next {

@@ -88,10 +88,4 @@ export default {
 		transform: translateY(-50px);
 	}
 }
-
-
-
-
-
-
 </style>

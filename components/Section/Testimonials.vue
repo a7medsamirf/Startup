@@ -10,7 +10,7 @@
     </v-container>
       <div class="ReviewCard pt-16" id="ReviewCard">
   <slick ref="slick" :options="slickOptions">
-        <div class="review text-center"
+        <div class="review"
              v-for="(review, index) in ReviewData"
              :key="index"
         >
@@ -35,7 +35,7 @@
               </v-list-item-content>
             </v-list-item>
 
-            <i class="fa-solid fa-house"></i>
+      
             <v-list-item three-line>
               <v-avatar class="photo mr-3" width="70" height="70">
               <img :src="review.avatar" :alt="review.title">
