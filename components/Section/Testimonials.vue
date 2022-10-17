@@ -9,42 +9,29 @@
       </v-row>
     </v-container>
       <div class="ReviewCard pt-16" id="ReviewCard">
-  <slick ref="slick" :options="slickOptions">
-        <div class="review"
-             v-for="(review, index) in ReviewData"
-             :key="index"
-        >
+       <slick ref="slick" :options="slickOptions">
+        <div class="review" v-for="(review, index) in ReviewData" :key="index">
 
         <div class="comment-block">
 
-          <v-card
-            class="mx-auto pa-5"
-            outlined
-          >
+          <v-card class="mx-auto pa-5" outlined :right="$vuetify.rtl">
           <div class="person-block">
-     
-      
     
-
             <v-list-item >
               <v-list-item-content>
-                <v-list-item-title class="use-text-title5 text-color-default mb-1 mt-3">
-              {{ review.title }}
-            </v-list-item-title>
+                <v-list-item-title class="use-text-title5 text-color-default mb-1 mt-3" v-text="$t(review.title)" />
                 <v-list-item-subtitle class="use-text-paragraph" v-text="$t(review.comment)"/>
               </v-list-item-content>
             </v-list-item>
-
-      
+     
             <v-list-item three-line>
               <v-avatar class="photo mr-3" width="70" height="70">
               <img :src="review.avatar" :alt="review.title">
             </v-avatar>
 
       <v-list-item-content>
-
-        <v-list-item-title class="text-h5 mb-1">{{ review.title }}</v-list-item-title>
-        <v-list-item-subtitle>Greyhound divisely</v-list-item-subtitle>
+        <v-list-item-title class="text-h5 mb-1">{{ review.name }}</v-list-item-title>
+        <v-list-item-subtitle>Web Designer</v-list-item-subtitle>
       </v-list-item-content>
 
 
@@ -78,27 +65,32 @@ export default {
       ReviewData: [
         {
           avatar: imgAPI.avatar[3],
-          title: 'Austin Evon',
+          title: 'common.reviewtitle1',
+          name: 'Austin Evon',
           comment: 'common.comment',
         },
         {
           avatar: imgAPI.avatar[2],
-          title: 'Alisa Gray',
+          title: 'common.reviewtitle2',
+          name: 'Alisa Gray',
           comment: 'common.comment',
         },
         {
           avatar: imgAPI.avatar[5],
-          title: 'Jena Doe',
+          title: 'common.reviewtitle3',
+          name: 'Jena Doe',
           comment: 'common.comment',
         },
         {
           avatar: imgAPI.avatar[4],
-          title: 'Jena Doe',
+          title: 'common.reviewtitle1',
+          name: 'Jena Doe',
           comment: 'common.comment',
         },
         {
           avatar: imgAPI.avatar[0],
-          title: 'Jena Doe',
+          title: 'common.reviewtitle2',
+          name: 'Jena Doe',
           comment: 'common.comment',
         },
 
@@ -147,5 +139,6 @@ export default {
 
 .v-card{
   border-radius: 45px 45px 45px 15px !important;
+
 }
 </style>

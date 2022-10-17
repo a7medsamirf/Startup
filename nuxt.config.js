@@ -3,6 +3,7 @@ import languages from './static/lang/languages'
 import { theme } from './config/vuetify.options'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  ssr: false,
   head: {
     htmlAttrs: {
       lang: 'en',
@@ -21,7 +22,15 @@ export default {
     ]
   },
 
+  loadingIndicator: {
+    name: 'rotating-plane',
+    color: 'blue',
+    background: '#000'
+  },
+
+
   transition: 'slide-bottom',
+
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
