@@ -134,7 +134,7 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  build:{
     loaders: {
       vus: { cacheBusting: true },
       scss: { sourceMap: false }
