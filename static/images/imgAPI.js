@@ -13,6 +13,12 @@ const imgAPI = {
     '/images/avatars/5.jpg',
     '/images/avatars/6.jpg',
   ],
+  blog: [
+    '/images/blog/1.png',
+    '/images/blog/2.png',
+    '/images/blog/3.png',
+
+  ],
 }
 
 export default imgAPI

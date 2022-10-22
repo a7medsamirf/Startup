@@ -26,8 +26,8 @@
             <div class="blog-img">
               <v-img
               class=" rounded-xl"
-                alt=""
-                :src="require(`~/static/images/blog/1.png`)"
+              :alt="blog.title"
+                :src="blog.images"
               ></v-img>
               <div class="sb-badge">
                         <v-chip
@@ -39,16 +39,20 @@
                         </v-chip>
                       </div>
             </div>
+            <v-list-item >
+              <v-list-item-content>
+                <v-list-item-title class="use-text-title5 text-color-default mb-2" v-text="$t(blog.title)" />
+                <v-list-item-subtitle class="use-text-paragraph" v-text="$t(blog.description)" />
+              </v-list-item-content>
+            </v-list-item>
+   
 
-            <v-card-title class="blog-title">{{ blog.title }}</v-card-title>
-  
           <v-card-text>
             <p class="blog-description">7 min read · September 12</p>
           </v-card-text>
           <v-card-actions>
-            <v-btn x-large color="white" class="button figs-btn pa-5 white--text">Read More </v-btn>
 
-
+            <v-btn class="ma-2" outlined fab small color="indigo"><v-icon>mdi-pencil</v-icon></v-btn>
           </v-card-actions>
         </v-card>
   </v-col>
@@ -63,28 +67,35 @@
 </template>
 
 <script>
+  import imgAPI from '~/static/images/imgAPI'
 export default {
     name: "Blog",
     data () {
     return {
+      imgAPI: imgAPI,
       data_loaded : true,
       BlogData: [
         {
-          title: 'common.reviewtitle1',
+          images: imgAPI.blog[0],
+          title: 'blog.title',
+          description: 'blog.description',
           date: 'Austin Evon',
           tag: 'Business',
         },
         {
-          title: 'common.reviewtitle2',
+          images: imgAPI.blog[1],
+          title: 'blog.title',
+          description: 'blog.description',
           name: 'Alisa Gray',
           tag: 'Branding',
         },
         {
-          title: 'common.reviewtitle3',
+          images: imgAPI.blog[2],
+          title: 'blog.title',
+          description: 'blog.description',
           name: 'Jena Doe',
           tag: 'Product Design',
         },
-
       ],
     }
   },

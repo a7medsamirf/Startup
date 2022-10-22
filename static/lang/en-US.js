@@ -37,6 +37,10 @@ export default () => {
         "title": "From design to code and back.",
         "subtitle": " Startups typically begin by a founder (solo-founder) or co-founders who have a way to solve a problem. The founder of a startup will begin market validation by problem interview, solution interview, and building a minimum viable product (MVP), i.e. a prototype, to develop and validate their business models.",
       },
+      blog:{
+        "title": "How A Website Growths your Business",
+        "description": "Startups typically begin by a founder (solo-founder) or co-founders who have a way to solve a problem.",
+      },
     })
   })
 }
