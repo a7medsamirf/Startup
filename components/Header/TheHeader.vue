@@ -75,10 +75,10 @@
           </v-menu>
         
         </v-toolbar-items>
-        <div class="hidden-md-and-down">
+<!--         <div class="hidden-md-and-down">
           <button  href="#" title="تواصل معنا" class="btn default ma-5 pa-5"> {{ $t('common.discuss') }}</button>
          <button href="#" title="تواصل معنا" class="btn outline">{{ $t('common.Learn-more') }}</button>
-        </div>
+        </div> -->
    
     <Settings />
         <ThemeSwitcher/>
