@@ -8,7 +8,7 @@
     position: absolute;
     z-index: 9;
     top: -130px;
-    right: 120px;
+    @include right(120px);
     display: block;
     width: 20px;
     height: 20px;
@@ -31,7 +31,7 @@
     position: absolute;
     z-index: 9;
     top: -130px;
-    right: 80px;
+    @include right(80px);
     display: block;
     width: 20px;
     height: 20px;

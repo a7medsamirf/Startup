@@ -7,7 +7,6 @@
             <button class="title-btn rounded-xl elevation-0">Blog</button>
             <h2 class="text-color-default use-text-title2 ma-3 ">Knowledge Hub </h2>
           </div>
-
       </v-row>
 
 
@@ -18,7 +17,7 @@
                   type=" card-avatar, article, actions"
                 >
                 </v-skeleton-loader>
-    <v-card  class=" rounded-xl"     
+    <v-card  class="blog-card rounded-xl"     
           outlined
           elevation-0
           v-if="!data_loaded"
@@ -29,37 +28,45 @@
               :alt="blog.title"
                 :src="blog.images"
               ></v-img>
-              <div class="sb-badge">
+              <div class="sb-badge" :right="$vuetify.rtl">
                         <v-chip
-                          class="ma-2 white--text "
-                          color="primary"
+                          class="ma-2 primary--text "
+                          color="white"
+                          
                           label
                         >
                           {{ blog.tag }}
                         </v-chip>
                       </div>
             </div>
-            <v-list-item >
-              <v-list-item-content>
-                <v-list-item-title class="use-text-title5 text-color-default mb-2" v-text="$t(blog.title)" />
-                <v-list-item-subtitle class="use-text-paragraph" v-text="$t(blog.description)" />
+ <div class="pa-3">
+            <v-list-item-content>
+                  <v-list-item-title class="use-text-title5 text-color-default mb-2" v-text="$t(blog.title)" />
+                  <v-list-item-subtitle class="use-text-paragraph" v-text="$t(blog.description)" />
               </v-list-item-content>
-            </v-list-item>
-   
 
-          <v-card-text>
+              <v-card-actions>
             <p class="blog-description">7 min read · September 12</p>
-          </v-card-text>
-          <v-card-actions>
-
-            <v-btn class="ma-2" outlined fab small color="indigo"><v-icon>mdi-pencil</v-icon></v-btn>
+            <v-spacer></v-spacer>
+            
+            <v-btn v-if="!$vuetify.rtl" class="ma-2 pencil-btn" outlined fab small color="indigo"><i class="fa-regular fa-right-long fa-lg"></i></v-btn>
+            <v-btn v-else class="ma-2 pencil-btn" outlined fab small color="indigo"><i class="fa-regular fa-left-long fa-lg"></i></v-btn>
           </v-card-actions>
+
+ </div>
+      
+
+
         </v-card>
   </v-col>
 
 </v-row>
 
-
+<v-row  class="justify-center mt-10">
+          <div class="text-center">
+            <button href="#" title="تواصل معنا" class="btn outline">{{ $t('common.Learn-more') }}</button>
+          </div>
+      </v-row>
 
     </v-container>
 
@@ -124,11 +131,33 @@ h2::first-word {
   z-index: 2;
   top: 20px;
   border-radius: 3px;
-  left: 10px;
+  @include left(10px);
   color: #FFF !important;
   font-size: 14px;
   display: flex;
   align-items: center;
 }
+.blog-card{
+  cursor: pointer;
+  transition:  all 0.5s ease-in-out;
+  .pencil-btn{
+  position: relative;
+  transition:  all 0.5s ease-in-out;
+}
+&:hover{
+  transform: translateY(-10px);
+  transition:  all 0.5s ease-in-out;
+  .pencil-btn{
+    transition:  all 0.5s ease-in-out;
+    background-color: var(--maincolor);
+    border: 1px solid var(--maincolor);
+    transform: translatex(10px);
+    color: #fff !important;
+    box-shadow: $box-shadow;
+  }
+} 
+}
+
+
 </style>
 
