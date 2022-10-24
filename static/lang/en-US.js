@@ -41,6 +41,10 @@ export default () => {
         "title": "How A Website Growths your Business",
         "description": "Startups typically begin by a founder (solo-founder) or co-founders who have a way to solve a problem.",
       },
+      footer:{
+        "contactus": " Contact Us",
+        "Social-Media": "Social Media",
+      }
     })
   })
 }

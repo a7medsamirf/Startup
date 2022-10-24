@@ -5,9 +5,13 @@
       <v-footer class="pt-20">
         <v-container>
           <v-row>
-            <v-col cols="12" lg="4" md="6" sm="12">
-              <button class="title-btn rounded-xl elevation-0">contact us</button>
-              <v-list-item-title class="use-text-title2 mt-3"> Hello@Startup.com </v-list-item-title>
+            <v-col cols="12" lg="5" md="6" sm="12">
+              <button class="title-btn rounded-xl elevation-0">  {{ $t('footer.contactus') }}</button>
+
+              <v-list-item-title v-if="!$vuetify.rtl" class="use-text-title mt-3"> Hello@Startup.com   <i class="fa-regular fa-arrow-up-right"></i></v-list-item-title>
+              <v-list-item-title v-else class="use-text-title mt-3"> Hello@Startup.com   <i class="fa-regular fa-arrow-up-left"></i></v-list-item-title>
+
+              <social-media />
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12">
               <div class="widget-tittle ma-2"><h2>Quick Links</h2> <span></span></div>
@@ -89,7 +93,9 @@
 </template>
 
 <script>
+import SocialMedia from '../SocialMedia.vue'
 export default {
+  components: { SocialMedia },
   name: "The-Footer",
   data: () => ({
     Services: [
@@ -145,6 +151,19 @@ export default {
   .no-active::before {
     opacity: 0 !important;
   }
+}
+
+i.fa-regular.fa-arrow-up-right,
+i.fa-regular.fa-arrow-up-left {
+    width: 50px;
+    height: 50px;
+    background: var(--maincolor);
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+    font-size: 25px;
 }
 
 </style>
