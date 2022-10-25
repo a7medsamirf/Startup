@@ -38,18 +38,9 @@ Style Index
   font-family: $en-body-font-family;
 }
 .v-application{
-  &:after{
-    content: "";
-    background-image: url(#{$BodyBgPath}/body-bg.png) !important;
-    background-size: cover !important;
-    background-repeat: repeat !important;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    z-index: 1;
-    position: absolute;
-  }
-
+  background-image: url(#{$BodyBgPath}/body-bg.png) !important;
+  background-size: contain !important;
+  background-repeat: repeat !important;
 }
 body{
   text-transform: capitalize;
