@@ -4,7 +4,7 @@
             <v-row>
           <div>
             <button class="title-btn rounded-xl elevation-0">Testimonials</button>
-            <h2 class="text-color-default use-text-title2 my-3 ">Trusted by 100's of clients</h2>
+            <h2 class="text-color-default use-text-title my-3 ">Trusted by 100's of clients</h2>
           </div>
       </v-row>
     </v-container>
@@ -16,14 +16,14 @@
 
           <v-card class="mx-auto pa-5" outlined :right="$vuetify.rtl">
           <div class="person-block">
-    
+
             <v-list-item >
               <v-list-item-content>
                 <v-list-item-title class="use-text-title5 text-color-default mb-1 mt-3" v-text="$t(review.title)" />
                 <v-list-item-subtitle class="use-text-paragraph" v-text="$t(review.comment)"/>
               </v-list-item-content>
             </v-list-item>
-     
+
             <v-list-item three-line>
               <v-avatar class="photo mr-3" width="70" height="70">
               <img :src="review.avatar" :alt="review.title">
@@ -47,7 +47,7 @@
 </div>
 
 
-  
+
     </section>
 </template>
 

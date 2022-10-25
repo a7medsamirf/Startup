@@ -4,8 +4,8 @@
 
       <v-row  class="justify-center">
           <div class="text-center">
-            <button class="title-btn rounded-xl elevation-0">Blog</button>
-            <h2 class="text-color-default use-text-title2 ma-3 ">Knowledge Hub </h2>
+            <button class="title-btn rounded-xl elevation-0">{{ $t('blog.section-title') }}</button>
+            <h2 class="text-color-default use-text-title ma-3 ">{{ $t('blog.section-description') }} </h2>
           </div>
       </v-row>
 
@@ -17,7 +17,7 @@
                   type=" card-avatar, article, actions"
                 >
                 </v-skeleton-loader>
-    <v-card  class="blog-card rounded-xl"     
+    <v-card  class="blog-card rounded-xl"
           outlined
           elevation-0
           v-if="!data_loaded"
@@ -33,7 +33,7 @@
                         <v-chip
                           class="ma-2 primary--text "
                           color="white"
-                          
+
                           label
                         >
                           {{ blog.tag }}
@@ -49,13 +49,13 @@
               <v-card-actions>
             <p class="blog-description">7 min read · September 12</p>
             <v-spacer></v-spacer>
-            
+
             <v-btn v-if="!$vuetify.rtl" class="ma-2 pencil-btn" outlined fab small color="indigo"><i class="fa-duotone fa-right-long fa-lg"></i></v-btn>
             <v-btn v-else class="ma-2 pencil-btn" outlined fab small color="indigo"><i class="fa-duotone fa-left-long fa-lg"></i></v-btn>
           </v-card-actions>
 
  </div>
-      
+
 
 
         </v-card>
@@ -156,7 +156,7 @@ h2::first-word {
     color: #fff !important;
     box-shadow: $box-shadow;
   }
-} 
+}
 }
 
 

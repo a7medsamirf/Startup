@@ -1,5 +1,5 @@
 <template>
-  <div class="py-16 d-flex align-center justify-center">
+  <div class="pt-16">
     <v-container>
     <section class="Newsletter section-bg py-16 rounded-xl">
 

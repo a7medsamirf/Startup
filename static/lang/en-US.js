@@ -25,8 +25,8 @@ export default () => {
         "subtitle": "A startup is a company or project undertaken by an entrepreneur to seek, develop, and validate a scalable business model.",
       },
       features: {
-        "section-title": "",
-        "section-description": "",
+        "section-title": "features",
+        "section-description": "Your Dream Template",
         "Product": "Product Design",
         "Branding": "Branding",
         "Programming": "Programming",
@@ -38,6 +38,8 @@ export default () => {
         "subtitle": " Startups typically begin by a founder (solo-founder) or co-founders who have a way to solve a problem. The founder of a startup will begin market validation by problem interview, solution interview, and building a minimum viable product (MVP), i.e. a prototype, to develop and validate their business models.",
       },
       blog:{
+        "section-title": "Blog",
+        "section-description": "Knowledge Hub",
         "title": "How A Website Growths your Business",
         "description": "Startups typically begin by a founder (solo-founder) or co-founders who have a way to solve a problem.",
       },

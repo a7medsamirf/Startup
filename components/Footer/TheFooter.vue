@@ -7,8 +7,8 @@
           <v-row>
             <v-col cols="12" lg="5" md="6" sm="12">
               <button class="title-btn rounded-xl elevation-0">  {{ $t('footer.contactus') }}</button>
-              <v-list-item-title v-if="!$vuetify.rtl" class="use-text-title mt-3"> Hello@Startup.com   <i class="fa-duotone fa-arrow-up-right"></i></v-list-item-title>
-              <v-list-item-title v-else class="use-text-title mt-3"> Hello@Startup.com   <i class="fa-duotone fa-arrow-up-left"></i></v-list-item-title>
+              <v-list-item-title v-if="!$vuetify.rtl" class="use-text-title2 mt-3"> Hello@Startup.com   <i class="fa-duotone fa-arrow-up-right"></i></v-list-item-title>
+              <v-list-item-title v-else class="use-text-title2 mt-3"> Hello@Startup.com   <i class="fa-duotone fa-arrow-up-left"></i></v-list-item-title>
 
               <social-media />
             </v-col>
