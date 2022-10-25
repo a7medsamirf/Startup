@@ -5,17 +5,19 @@
     <FromDesign />
     <Testimonials />
     <Blog />
+  <Newsletter />
 </div>
 </template>
 
 <script>
 import Hero from "~/components/Section/Hero";
 import Features from "~/components/Section/features";
-import FromDesign from "~/components/Section/FromDesign.vue";
-import Testimonials from "~/components/Section/Testimonials.vue";
-import Blog from "~/components/Section/Blog.vue";
+import FromDesign from "~/components/Section/FromDesign";
+import Testimonials from "~/components/Section/Testimonials";
+import Blog from "~/components/Section/Blog";
+import Newsletter from "~/components/Section/Newsletter";
 export default {
   name: 'IndexPage',
-  components: { Features, Hero, FromDesign, Testimonials, Blog }
+  components: {Newsletter, Features, Hero, FromDesign, Testimonials, Blog }
 }
 </script>

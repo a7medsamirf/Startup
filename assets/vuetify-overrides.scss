@@ -36,13 +36,14 @@ Style Index
 
 .v-application--is-ltr{
   font-family: $en-body-font-family;
-  background-image: url(../static/images/body-bg.png);
-  background-size: cover;
+}
+.v-application{
+  background-image: url(#{$BodyBgPath}/body-bg.png) !important;
+  background-size: contain !important;
+  background-repeat: repeat !important;
 }
 body{
-/*  text-transform: capitalize;
-  background-image: url(../static/images/body-bg.png);
-  background-size: cover;*/
+  text-transform: capitalize;
   letter-spacing: normal;
 
 }

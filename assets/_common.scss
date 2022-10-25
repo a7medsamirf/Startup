@@ -26,7 +26,7 @@
 .use-text {
   &-title {
     font-size: $h1-font-size;
-
+    font-weight: $font-bolder;
     @include breakpoints-down(md) {
       font-size: $h2-font-size;
       line-height: $spacing7;

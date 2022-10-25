@@ -25,7 +25,7 @@ export default {
   loadingIndicator: {
     name: 'rotating-plane',
     color: 'blue',
-    background: '#000'
+    background: '#356DFF'
   },
 
 

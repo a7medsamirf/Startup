@@ -2,14 +2,13 @@
   <div>
 
     <div id="footer" class="pa-0">
-      <v-footer class="pt-20">
+      <div class="pt-20">
         <v-container>
           <v-row>
             <v-col cols="12" lg="5" md="6" sm="12">
               <button class="title-btn rounded-xl elevation-0">  {{ $t('footer.contactus') }}</button>
-
-              <v-list-item-title v-if="!$vuetify.rtl" class="use-text-title mt-3"> Hello@Startup.com   <i class="fa-regular fa-arrow-up-right"></i></v-list-item-title>
-              <v-list-item-title v-else class="use-text-title mt-3"> Hello@Startup.com   <i class="fa-regular fa-arrow-up-left"></i></v-list-item-title>
+              <v-list-item-title v-if="!$vuetify.rtl" class="use-text-title mt-3"> Hello@Startup.com   <i class="fa-duotone fa-arrow-up-right"></i></v-list-item-title>
+              <v-list-item-title v-else class="use-text-title mt-3"> Hello@Startup.com   <i class="fa-duotone fa-arrow-up-left"></i></v-list-item-title>
 
               <social-media />
             </v-col>
@@ -69,7 +68,7 @@
                 </v-col>
               </v-row>
 
-      
+
 
             </v-col>
 
@@ -80,13 +79,13 @@
               <v-divider class="white--text"></v-divider>
               <div class="py-4" >Copyright
                 {{ new Date().getFullYear() }} — <strong>StartUp</strong>. All rights reserved.
-              </div>          
+              </div>
               </v-col>
 
           </v-row>
         </v-container>
 
-      </v-footer>
+      </div>
 
     </div>
   </div>
@@ -114,7 +113,6 @@ export default {
       { text: 'Privacy & Terms' },
       { text: 'Google'},
       { text: 'Alphabet'},
-
     ],
 
   }),
@@ -125,25 +123,6 @@ export default {
 
 <style scoped lang="scss">
 #footer
-{
-  .footer-subscribe .v-icon
-  {
-    width: 35px;
-    height: 35px;
-    line-height: 37px;
-    font-size: 18px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #ff8e28;
-    -webkit-transition: 0.5s all ease;
-    transition: 0.5s all ease;
-    animation: flashing 1.5s infinite linear;
-    position: absolute;
-    top: 5px;
-    right: 6px;
-    padding: 6px;
-    text-align: center;
-  }
   .Quick-Links
   {
     background: transparent;
@@ -151,18 +130,16 @@ export default {
   .no-active::before {
     opacity: 0 !important;
   }
-}
 
-i.fa-regular.fa-arrow-up-right,
-i.fa-regular.fa-arrow-up-left {
+i.fa-duotone.fa-arrow-up-right,
+i.fa-duotone.fa-arrow-up-left {
     width: 50px;
     height: 50px;
     background: var(--maincolor);
     border-radius: 50%;
-    vertical-align: middle;
     text-align: center;
     color: #fff;
-    line-height: 45px;
+    line-height: 50px;
     font-size: 25px;
 }
 

@@ -82,7 +82,7 @@
           transform: translateY(-10px);
           &::before{
             transform: translate3d(0px, 0, 0px);
-    bottom: 0;
+           bottom: 0;
           }
         }
       img {
@@ -95,16 +95,19 @@
         left: 0;
         right: 0;
         content: "";
-        background-color: #356DFF;
+        background-color: var(--maincolor);
         transition: all 500ms ease;
         transform: translate3d(0px, 100%, 0px);
         z-index: -1;
       }
     }
   }
+
   .v-card:hover {
     box-shadow: none;
     transition: all 0.5s ease-in-out;
+    color: #fff;
   }
+
 
 </style>

@@ -27,6 +27,7 @@
               class=" rounded-xl"
               :alt="blog.title"
                 :src="blog.images"
+                :lazy-src="blog.images"
               ></v-img>
               <div class="sb-badge" :right="$vuetify.rtl">
                         <v-chip
@@ -49,8 +50,8 @@
             <p class="blog-description">7 min read · September 12</p>
             <v-spacer></v-spacer>
             
-            <v-btn v-if="!$vuetify.rtl" class="ma-2 pencil-btn" outlined fab small color="indigo"><i class="fa-regular fa-right-long fa-lg"></i></v-btn>
-            <v-btn v-else class="ma-2 pencil-btn" outlined fab small color="indigo"><i class="fa-regular fa-left-long fa-lg"></i></v-btn>
+            <v-btn v-if="!$vuetify.rtl" class="ma-2 pencil-btn" outlined fab small color="indigo"><i class="fa-duotone fa-right-long fa-lg"></i></v-btn>
+            <v-btn v-else class="ma-2 pencil-btn" outlined fab small color="indigo"><i class="fa-duotone fa-left-long fa-lg"></i></v-btn>
           </v-card-actions>
 
  </div>
