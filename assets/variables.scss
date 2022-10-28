@@ -72,8 +72,15 @@ $dark-text-secondary: rgba(255, 255, 255, 0.7);
 $dark-text-disabled: rgba(255, 255, 255, 0.5);
 $dark-text-hint: rgba(255, 255, 255, 0.5);
 $dark-divider: rgba(255, 255, 255, 0.12);
-$dark-background-paper: #0c243f;
+
 $dark-background-default: #1b344d;
+
+
+// Theme color
+
+$light-background-section: var(--white-section);
+$dark-background-section: var(--dark-section);
+
 
 // dark shadow
 $dark-shadow: 0px 1px 10px 1px #404040, 0px 1px 1px 1px #2a2a2a, 0px 2px 8px -1px #141414;

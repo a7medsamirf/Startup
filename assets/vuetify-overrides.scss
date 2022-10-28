@@ -30,8 +30,13 @@ Style Index
   --p-darkcolor: #a9a9a9;
   --white-color: #fff;
   --dark-body: #0B0D39;
-  --dark-section: #000;
+
+
+  --white-section: #F2FBFC;
+  --dark-section: #1A1C46;
+
   --dark-card: #2B2D5B;
+  --white-card: #2B2D5B;
 }
 
 .v-application--is-ltr{
@@ -123,4 +128,14 @@ a {
   margin: 0 !important;
   border-radius: 0 !important;
   transition: all 0.5s ease-in-out;
+}
+
+
+/* Arrows */
+.slick-prev{
+  @include right(120px);
+}
+
+.slick-next {
+  @include right(80px);
 }

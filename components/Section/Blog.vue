@@ -24,7 +24,7 @@
         >
             <div class="blog-img">
               <v-img
-              class=" rounded-xl"
+              class=""
               :alt="blog.title"
                 :src="blog.images"
                 :lazy-src="blog.images"
@@ -33,7 +33,6 @@
                         <v-chip
                           class="ma-2 primary--text "
                           color="white"
-
                           label
                         >
                           {{ blog.tag }}
@@ -152,7 +151,7 @@ h2::first-word {
     transition:  all 0.5s ease-in-out;
     background-color: var(--maincolor);
     border: 1px solid var(--maincolor);
-    transform: translatex(10px);
+/*     @include translatex(10px); */
     color: #fff !important;
     box-shadow: $box-shadow;
   }

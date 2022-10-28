@@ -38,6 +38,14 @@
   @include rtl-sass-text-align($val);
 }
 
+
+/* Translate */
+
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+
 /* Border */
 @mixin border-left($val) {
   @include rtl-sass-border-left($val);
@@ -95,12 +103,12 @@
 }
 
 /* Background color palette */
-@mixin palette-background-paper {
+@mixin palette-background-section {
   .theme--light & {
-    background-color: $light-background-paper
+    background-color: $light-background-section
   }
   .theme--dark & {
-    background-color: $dark-background-paper
+    background-color: $dark-background-section
   }
 }
 
@@ -122,14 +130,6 @@
   }
 }
 
-@mixin palette-background-text-secondary {
-  .theme--light & {
-    background-color: $light-text-secondary
-  }
-  .theme--dark & {
-    background-color: $dark-text-secondary
-  }
-}
 
 @mixin bg-color-fade($color, $opacity) {
   position: relative;
