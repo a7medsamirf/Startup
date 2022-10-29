@@ -5,7 +5,7 @@
       <v-row  class="justify-center">
           <div class="text-center">
             <button class="title-btn rounded-xl elevation-0">{{ $t('blog.section-title') }}</button>
-            <h2 class="text-color-default use-text-title ma-3 ">{{ $t('blog.section-description') }} </h2>
+            <h2 class="text-color-default use-text-title2 ma-3 ">{{ $t('blog.section-description') }} </h2>
           </div>
       </v-row>
 

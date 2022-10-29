@@ -13,7 +13,7 @@
               <social-media />
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12">
-              <div class="widget-tittle ma-2"><h2>{{ $t('footer.QuickLinks') }}</h2> <span></span></div>
+              <div class="widget-tittle ma-2"><h3 class="">{{ $t('footer.QuickLinks') }}</h3> <span></span></div>
               <v-row>
                 <v-col lg="4" md="6" sm="12">
                   <v-list class="Quick-Links">

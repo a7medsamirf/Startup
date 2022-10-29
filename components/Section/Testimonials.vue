@@ -3,8 +3,8 @@
         <v-container>
             <v-row>
           <div>
-            <button class="title-btn rounded-xl elevation-0">Testimonials</button>
-            <h2 class="text-color-default use-text-title my-3 ">Trusted by 100's of clients</h2>
+            <button class="title-btn rounded-xl elevation-0">{{ $t('Testimonials.section-title') }}</button>
+            <h2 class="text-color-default use-text-title2 my-3 ">{{ $t('Testimonials.section-description') }}</h2>
           </div>
       </v-row>
     </v-container>
