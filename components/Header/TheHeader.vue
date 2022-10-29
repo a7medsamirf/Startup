@@ -14,8 +14,7 @@
         <v-btn class="close-icon" icon @click="drawer = !drawer"> <v-icon>mdi-close</v-icon></v-btn>
       </v-list-item>
 
-      <!----- Sidebar Components ----->
-      <sidebar />
+   
 
     </v-navigation-drawer>
     <!---------- End Navigation Drawer ---------->
@@ -23,9 +22,9 @@
     <!---------- Start App Bar ---------->
     <v-app-bar app height="85px" fixed  elevation="0">
       <v-container class="pa-0 fill-height">
-        <v-app-bar-nav-icon
+<!--         <v-app-bar-nav-icon
           class="hidden-md-and-up"
-          @click.stop="drawer = !drawer" />
+          @click.stop="drawer = !drawer" /> -->
 
         <NuxtLink :to="localePath('/')" >
           <v-img v-if="!$vuetify.theme.dark" max-height="50" max-width="170" :src="require('static/images/logo/dark-logo.png')" ></v-img>
@@ -91,11 +90,11 @@
 </template>
 
 <script>
-import Sidebar from "~/components/Header/Sidebar";
+
 import Settings from "~/components/Header/Settings";
 import ThemeSwitcher from "~/components/Header/ThemeSwitcher";
 export default {
-  components: {ThemeSwitcher, Settings, Sidebar},
+  components: {ThemeSwitcher, Settings},
   name: "TheHeader",
   data () {
     return {

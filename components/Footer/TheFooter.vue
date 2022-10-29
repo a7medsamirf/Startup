@@ -13,7 +13,7 @@
               <social-media />
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12">
-              <div class="widget-tittle ma-2"><h2>Quick Links</h2> <span></span></div>
+              <div class="widget-tittle ma-2"><h2>{{ $t('footer.QuickLinks') }}</h2> <span></span></div>
               <v-row>
                 <v-col lg="4" md="6" sm="12">
                   <v-list class="Quick-Links">
@@ -77,8 +77,10 @@
               cols="12"
             >
               <v-divider class="white--text"></v-divider>
-              <div class="py-4" >Copyright
-                {{ new Date().getFullYear() }} — <strong>StartUp</strong>. All rights reserved.
+              <div class="py-4" >
+                {{ $t('footer.Copyright') }}
+                {{ new Date().getFullYear() }} © <strong>StartUp</strong>. 
+                {{ $t('footer.reserved') }}
               </div>
               </v-col>
 

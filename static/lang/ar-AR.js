@@ -54,6 +54,9 @@ export default () => {
       footer:{
         "contactus": "اتصل بنا",
         "Social-Media": "تابعنا على ",
+        "QuickLinks": "روابط سريعة",
+        "Copyright": "حقوق الطبع والنشر",
+        "reserved": " كل الحقوق محفوظة.",
       }
     })
   })

@@ -54,6 +54,9 @@ export default () => {
       footer:{
         "contactus": " Contact Us",
         "Social-Media": "Social Media",
+        "QuickLinks": "Quick Links",
+        "Copyright": "Copyright",
+        "reserved": "All rights reserved.",
       }
     })
   })
