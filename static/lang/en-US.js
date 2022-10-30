@@ -20,6 +20,9 @@ export default () => {
         "contacts": "contacts Us",
         "faq": "Faq",
       },
+      MobileBar: {
+        "home": "Home",
+      },
       HeroSection: {
         "title": "The template your startup needed",
         "subtitle": "A startup is a company or project undertaken by an entrepreneur to seek, develop, and validate a scalable business model.",
