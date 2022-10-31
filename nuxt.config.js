@@ -23,9 +23,9 @@ export default {
   },
 
   loadingIndicator: {
-    name: 'rotating-plane',
-    color: 'blue',
-    background: '#356DFF'
+    name: 'chasing-dots',
+    color: '#356DFF',
+    background: '#fff'
   },
 
 

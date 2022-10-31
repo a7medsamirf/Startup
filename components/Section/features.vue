@@ -9,10 +9,19 @@
           </div>
 
       </v-row>
-
-
-      <v-row class="mt-10">
+      <u-animate-container>
+        <v-row class="mt-10">
         <v-col cols="12" lg="3" md="4" sm="6" v-for="(item, index) in features" :key="index">
+          <u-animate
+          name="fadeIn"
+          :delay="(0.4 * index) + 's'"
+          duration="1s"
+          :iteration="1"
+          :offset="0"
+          animateClass="animated"
+          :begin="false"
+        >
+
           <v-card class="text-center rounded-xl" outlined>
             <div class="card-img">
               <img :src="item.avatar" :alt="item.title">
@@ -27,8 +36,15 @@
             </v-list-item>
 
           </v-card>
+          
+          </u-animate>
         </v-col>
       </v-row>
+      </u-animate-container>
+
+ 
+
+
     </v-container>
 
   </section>
@@ -110,4 +126,7 @@
   }
 
 
+  h2::first-letter {
+      color: #356dff
+}
 </style>

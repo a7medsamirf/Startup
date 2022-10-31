@@ -129,7 +129,14 @@
     background-color: $dark-text-secondary
   }
 }
-
+@mixin text-color-default{
+  .theme--light & {
+    color: #000
+  }
+  .theme--dark & {
+    color: #fff
+  }
+}
 
 @mixin bg-color-fade($color, $opacity) {
   position: relative;

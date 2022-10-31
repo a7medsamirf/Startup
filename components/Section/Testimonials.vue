@@ -14,7 +14,7 @@
 
         <div class="comment-block">
 
-          <v-card class="mx-auto pa-5" outlined :right="$vuetify.rtl">
+          <v-card class="mx-auto pa-5" outlined >
           <div class="person-block">
 
             <v-list-item >
