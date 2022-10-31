@@ -96,6 +96,10 @@
         transition: all 0.5s ease-in-out;
         &:hover{
           transform: translateY(-10px);
+          .text-color-default,
+          .use-text-paragraph{
+            color: #fff;
+          }
           &::before{
             transform: translate3d(0px, 0, 0px);
            bottom: 0;

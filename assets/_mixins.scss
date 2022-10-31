@@ -129,7 +129,7 @@
     background-color: $dark-text-secondary
   }
 }
-@mixin text-color-default{
+@mixin color{
   .theme--light & {
     color: #000
   }
