@@ -22,6 +22,7 @@ export default () => {
       },
       MobileBar: {
         "home": "Home",
+        "Testimonials": "Testimonials",
       },
       HeroSection: {
         "title": "The template your startup needed",

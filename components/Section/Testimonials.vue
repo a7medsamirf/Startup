@@ -1,11 +1,13 @@
 <template>
-      <section class="Testimonials section-bg py-16">
+      <section class="Testimonials section-bg py-16" id="Testimonials">
         <v-container>
             <v-row>
-          <div>
-            <button class="title-btn rounded-xl elevation-0">{{ $t('Testimonials.section-title') }}</button>
+                <v-col>
+                  <button class="title-btn rounded-xl elevation-0">{{ $t('Testimonials.section-title') }}</button>
             <h2 class="text-color-default use-text-title2 my-3 ">{{ $t('Testimonials.section-description') }}</h2>
-          </div>
+                </v-col>
+    
+      
       </v-row>
     </v-container>
       <div class="ReviewCard pt-16" id="ReviewCard">

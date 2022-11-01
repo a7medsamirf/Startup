@@ -22,6 +22,7 @@ export default () => {
       },
       MobileBar: {
         "home": "الرئيسية",
+        "Testimonials": "التعليقات",
       },
       HeroSection: {
         "title": "النموذج الذي تحتاجه شركتك الناشئة",

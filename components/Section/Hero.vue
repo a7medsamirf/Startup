@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero" id="hero">
     <v-container>
     <div class="hero-wrap">
       <div class="inner d-flex align-center justify-center">
