@@ -8,17 +8,17 @@
             <v-col cols="12" md="6" class="px-0">
               <div class="box">
 
-<div class="title2">
-    <span class="block"></span>
-    <h1 class="ma-5 text-color-default hero-title ">{{ $t('HeroSection.title') }}<span></span></h1>
-</div>
+          <div class="title2">
+              <span class="block"></span>
+              <h1 class="ma-5 text-color-default hero-title ">{{ $t('HeroSection.title') }}<span></span></h1>
+          </div>
 
-<div class="role">
-    <div class="block"></div>
-    <p class="use-text-subtitle ma-5 hero-subtitle">{{ $t('HeroSection.subtitle') }}</p>
-</div>
+          <div class="role">
+              <div class="block"></div>
+              <p class="use-text-subtitle ma-5 hero-subtitle">{{ $t('HeroSection.subtitle') }}</p>
+          </div>
 
-</div>
+          </div>
 
     <!--           <div class="text box">
                 <div class="title">
@@ -33,7 +33,6 @@
                 <button href="#" title="تواصل معنا" class="btn outline">{{ $t('common.Learn-more') }}</button>
               </div>
  -->
-
 
 
             </v-col>
@@ -112,18 +111,11 @@ export default {
 	}
 }
 
-
-
-
-
 .box {
-
-
     .title2 {
       width: 100%;
       position: relative;
       height: 150px;
-
       .block {
         width: 0%;
         height: inherit;
