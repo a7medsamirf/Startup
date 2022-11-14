@@ -8,7 +8,7 @@
             <v-col cols="12" md="5" class="px-0">
               <div class="text">
                 <h2 class="text-color-default use-text-title ma-3 ">{{ $t('FromDesign.title') }}  </h2>
-                <p class="use-text-subtitle ma-5 hero-subtitle">{{ $t('FromDesign.subtitle') }}</p>
+                <p class="use-text-paragraph ma-5 hero-subtitle">{{ $t('FromDesign.subtitle') }}</p>
                 <button  href="#" title="تواصل معنا" class="btn default ma-5 pa-5"> {{ $t('common.discuss') }}</button>
               </div>
             </v-col>

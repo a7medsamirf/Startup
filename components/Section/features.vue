@@ -129,8 +129,4 @@
     color: #fff;
   }
 
-
-  h2::first-letter {
-      color: #356dff
-}
 </style>

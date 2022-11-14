@@ -99,13 +99,13 @@ export default {
       ],
       slickOptions: {
         slidesToShow: 3,
-        centerMode: true,
+        centerMode: false,
         arrows: true,
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 800,
         autoplaySpeed: 3000,
-        autoplay: false,
+        autoplay: true,
         responsive: [
           {
             breakpoint: 800,
