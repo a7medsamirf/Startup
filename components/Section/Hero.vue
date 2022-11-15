@@ -112,7 +112,8 @@ export default {
 		transform: translateY(-50px);
 	}
 }
-@include breakpoints-up(md) {
+
+@include breakpoints-up(lg) {
   #hero
   {
     .box {
@@ -270,7 +271,7 @@ export default {
       opacity: 0;
     }
     100% {
-      opacity: 0.5;
+      opacity: 1;
     }
   }
 

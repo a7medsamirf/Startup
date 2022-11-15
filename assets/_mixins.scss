@@ -74,6 +74,27 @@
   }
 }
 
+/// title text color
+@mixin title-text-color {
+  .theme--light & {
+    color: $dark-surface
+  }
+  .theme--dark & {
+    color: $dark-text-primary
+  }
+}
+
+
+/// description text color
+@mixin description-text-color {
+  .theme--light & {
+    color: $light-description-text
+  }
+  .theme--dark & {
+    color: $dark-description-text
+  }
+}
+
 @mixin palette-text-disabled {
   .theme--light & {
     color: $light-text-disabled
@@ -83,14 +104,6 @@
   }
 }
 
-@mixin palette-text-hint {
-  .theme--light & {
-    color: $light-text-hint
-  }
-  .theme--dark & {
-    color: $dark-text-hint
-  }
-}
 
 /* Divider color palette */
 @mixin palette-divider {
@@ -129,6 +142,7 @@
     background-color: $dark-text-secondary
   }
 }
+
 @mixin color{
   .theme--light & {
     color: #000

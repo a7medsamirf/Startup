@@ -58,16 +58,16 @@ $palette-common-black: #000;
 $palette-common-primary: #e62d2d;
 $palette-common-secondary: #FE9900;
 
-// light Color Palette
-$light-section-bg: #F2FBFC !important;
-
+$dark-description-text :rgba(255, 255, 255, 0.7);
+$light-description-text : #343474a3 !important;
 
 // Dark Color Palette
 $dark-surface: #2B2D5B !important; // card and item
 $dark-body: #0B0D39 !important;
 $dark-section-bg: #1A1C46 !important;
 
-$dark-text-primary: #fff;
+
+$dark-text-primary: var(--white-color);
 $dark-text-secondary: rgba(255, 255, 255, 0.7);
 $dark-text-disabled: rgba(255, 255, 255, 0.5);
 $dark-text-hint: rgba(255, 255, 255, 0.5);

@@ -100,8 +100,7 @@
   &-subtitle {
     font-size: $h6-font-size;
     font-weight: $font-medium;
-
-    /*    color: #64688c;*/
+     @include description-text-color;
     @include breakpoints-down(md) {
       font-size: $paragraph;
       line-height: 36px;
@@ -116,8 +115,9 @@
   &-paragraph {
     font-weight: $font-medium;
     font-size: $paragraph;
-    line-height: 25px !important;
+    line-height: 27px !important;
     white-space: break-spaces !important;
+    @include description-text-color;
   }
 }
 
@@ -169,7 +169,6 @@
   font-size: 17px;
 }
 
-
 .text-color-default {
-  color: #0B0D39;
+  @include title-text-color;
 }

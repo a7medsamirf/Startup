@@ -98,7 +98,7 @@
           transform: translateY(-10px);
           .text-color-default,
           .use-text-paragraph{
-            color: #fff;
+            color: #fff !important;
           }
           &::before{
             transform: translate3d(0px, 0, 0px);
