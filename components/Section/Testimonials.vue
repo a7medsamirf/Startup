@@ -28,7 +28,12 @@
 
             <v-list-item three-line>
               <v-avatar class="photo mr-3" width="70" height="70">
-              <img :src="review.avatar" :alt="review.title">
+
+              <v-img
+                  :alt="review.title"
+                  :src="require(`~/static/images/avatars/${review.avatar}`)"
+                ></v-img>
+
             </v-avatar>
 
       <v-list-item-content>

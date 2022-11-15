@@ -24,11 +24,10 @@
         >
             <div class="blog-img">
               <v-img
-              class=""
-              :alt="blog.title"
-                :src="blog.images"
-                :lazy-src="blog.images"
-              ></v-img>
+                  :alt="blog.title"
+                  :src="require(`~/static/images/blog/${blog.images}`)"
+                ></v-img>
+
               <div class="sb-badge" :right="$vuetify.rtl">
                         <v-chip
                           class="ma-2 primary--text "

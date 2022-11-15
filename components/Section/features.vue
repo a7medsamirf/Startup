@@ -24,7 +24,10 @@
 
           <v-card class="text-center rounded-xl" outlined>
             <div class="card-img">
-              <img :src="item.avatar" :alt="item.title">
+              <v-img
+                  :alt="item.avatar"
+                  :src="require(`~/static/images/features/${item.avatar}`)"
+                ></v-img>
             </div>
 
             <v-list-item>
