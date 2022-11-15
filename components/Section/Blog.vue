@@ -1,5 +1,5 @@
 <template>
-    <section class="blog py-16">
+    <section class="blog py-20">
     <v-container>
 
       <v-row  class="justify-center">

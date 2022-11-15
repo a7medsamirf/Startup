@@ -1,5 +1,5 @@
 <template>
-  <section class="features section-bg py-16">
+  <section class="features section-bg py-20">
     <v-container>
 
       <v-row  class="justify-center">
@@ -108,9 +108,6 @@
            bottom: 0;
           }
         }
-      img {
-        width: 80%;
-      }
       &:before {
         position: absolute;
         top: 0;

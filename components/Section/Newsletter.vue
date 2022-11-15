@@ -1,7 +1,7 @@
 <template>
   <div class="pt-16">
     <v-container>
-    <section class="Newsletter section-bg py-16 rounded-xl">
+    <section class="Newsletter section-bg py-20 rounded-xl">
 
         <v-container>
           <v-row class="justify-center">

@@ -108,6 +108,23 @@ a {
   }
 }
 
+.py-20{
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+  ;
+
+  @include breakpoints-down(md) {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    ;
+  }
+
+  @include breakpoints-down(xs) {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    ;
+  }
+}
 
 /*--------------------------------------------------
   [3. Theme color   ]
@@ -131,11 +148,23 @@ a {
 /* Arrows */
 .slick-prev{
   @include right(140px);
+  @include breakpoints-down(md) {
+   top: -150px !important;
+   @include right(85px);
+}
 }
 
 .slick-next {
   @include right(80px);
+  @include breakpoints-down(md) {
+   top: -150px !important;
+   @include right(45px);
 }
-
-
+}
+@include breakpoints-down(md) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 12px !important;
+  }
+}
 

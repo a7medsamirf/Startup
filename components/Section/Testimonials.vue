@@ -1,5 +1,5 @@
 <template>
-      <section class="Testimonials section-bg py-16" id="Testimonials">
+      <section class="Testimonials section-bg py-20" id="Testimonials">
         <v-container>
             <v-row>
                 <v-col>
@@ -146,6 +146,12 @@ export default {
 
 .v-card{
   border-radius: 45px 45px 45px 15px !important;
-
+}
+#Testimonials {
+  h2{
+    @include breakpoints-down(xs) {
+    width: 65% !important;
+}
+  }
 }
 </style>

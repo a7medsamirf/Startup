@@ -25,12 +25,12 @@
 <!--         <v-app-bar-nav-icon
           class="hidden-md-and-up"
           @click.stop="drawer = !drawer" /> -->
-
+          <div class="logo">
         <NuxtLink :to="localePath('/')" >
           <v-img v-if="!$vuetify.theme.dark" max-height="50" max-width="170" :src="require('static/images/logo/dark-logo.png')" ></v-img>
           <v-img v-else max-height="50" max-width="170" :src="require('static/images/logo/white.png')" ></v-img>
         </NuxtLink>
-
+      </div>
         <v-spacer />
         <v-toolbar-items
           class="hidden-md-and-down DesktopNav"
@@ -144,4 +144,12 @@ header.v-toolbar a.v-btn--active:after {
   position: absolute;
   bottom: 15px;
 }
+.logo{
+  .v-image{
+    @include breakpoints-down(md) {
+      max-width: 135px !important;
+    }
+  }
+}
+
 </style>

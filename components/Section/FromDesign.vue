@@ -1,5 +1,5 @@
 <template>
-    <section class="FromDesign py-16">
+    <section class="FromDesign py-20">
         <v-container>
     <div class="hero-wrap">
       <div class="inner d-flex align-center justify-center">
