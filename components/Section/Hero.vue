@@ -84,6 +84,9 @@ export default {
     text-transform: capitalize;
     font-size: 58px !important;
     font-weight: 900;
+    @include breakpoints-down(md) {
+      font-size: 42px !important;
+    }
   }
   .inner {
     height: 100%;
