@@ -4,6 +4,7 @@ import { theme } from './config/vuetify.options'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: false,
+  target: 'static',
   head: {
     htmlAttrs: {
       lang: 'en',
@@ -20,6 +21,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
     ]
+  },
+
+  router: {
+    base: '/Startup/'
   },
 
   loadingIndicator: {
