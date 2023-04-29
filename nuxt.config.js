@@ -33,7 +33,6 @@ export default {
     background: '#fff'
   },
 
-
   transition: 'slide-bottom',
 
 
