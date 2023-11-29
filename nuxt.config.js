@@ -1,5 +1,4 @@
 const appUrl = 'https://nuxt-i18n-demo.netlify.app';
-import languages from './static/lang/languages'
 import { theme } from './config/vuetify.options'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -16,6 +15,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name : 'theme-color', content: '#07AEAF'},
       {rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"},
     ],
     link: [
@@ -23,7 +23,7 @@ export default {
     ]
   },
 
-  router: {
+/*   router: {
     base: '/Startup/'
   },
 
@@ -32,7 +32,7 @@ export default {
     color: '#356DFF',
     background: '#fff'
   },
-
+ */
   transition: 'slide-bottom',
 
 
@@ -78,26 +78,43 @@ export default {
     "@nuxtjs/style-resources",
   ],
 
-  /* ** i18n config   */
-  i18n: {
-    // Options
-    //to make it seo friendly remove below line and add baseUrl option to production domain
-    seo: true,
-    // baseUrl: 'https://my-nuxt-app.com',
-    lazy: true,
-    locales: languages,
-    defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'en'
-    },
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      alwaysRedirect: true
-    },
-    langDir: 'static/lang/'
+        /* ** i18n config   */
+        i18n: {
+          // Options
+          //to make it seo friendly remove below line and add baseUrl option to production domain
+          seo: true,
+          // baseUrl: 'https://my-nuxt-app.com',
+          lazy: true,
+          langDir: "locales",
+          locales: [
+            {
+              code: 'ar',
+              iso: 'ar-AR',
+              name: 'AR',
+              file: 'ar-EG.json',
+              dir: 'rtl',
+              icon: 'flag-ar.svg'
+            },
+            {
+              code: 'en',
+              iso: 'en-US',
+              name: 'EN',
+              file: 'en-US.json',
+              dir: 'ltr',
+              icon: 'flag-en.svg'
+            },
+          ],
+          defaultLocale: 'ar',
+          vueI18n: {
+            fallbackLocale: 'ar'
+          },
+          detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'i18n_redirected',
+            alwaysRedirect: true
+          },
 
-  },
+        },
 
   /*
  ** Sitemap config
