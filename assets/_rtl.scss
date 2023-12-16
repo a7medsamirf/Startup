@@ -1,4 +1,17 @@
-
 .v-application--is-rtl{
   font-family: $body-font-family;
+  .ReviewCard {
+      .comment-block{
+          text-align: right !important;
+          .person-block{
+              .v-list-item {
+                  display: flex;
+                  flex: 1 1 100%;
+                  flex-direction: row-reverse;
+              }
+          }
+        
+      }
+  }
+
 }

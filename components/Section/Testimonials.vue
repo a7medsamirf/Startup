@@ -27,7 +27,7 @@
             </v-list-item>
 
             <v-list-item three-line>
-              <v-avatar class="photo mr-3" width="70" height="70">
+              <v-avatar class="photo" width="70" height="70">
 
               <v-img
                   :alt="review.title"
@@ -36,7 +36,7 @@
 
             </v-avatar>
 
-      <v-list-item-content>
+            <v-list-item-content class="ms-4">
         <v-list-item-title class="text-h5 mb-1">{{ review.name }}</v-list-item-title>
         <v-list-item-subtitle>Web Designer</v-list-item-subtitle>
       </v-list-item-content>
