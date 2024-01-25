@@ -24,7 +24,7 @@ export default {
     ]
   },
 
-/*   router: {
+  router: {
     base: '/Startup/'
   },
 
@@ -33,7 +33,7 @@ export default {
     color: '#356DFF',
     background: '#fff'
   },
- */
+
   transition: 'slide-bottom',
 
 
